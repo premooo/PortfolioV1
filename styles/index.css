@@ -1,0 +1,383 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: #1F1F1F;
+    font-family:  'Afacad Flux', sans-serif;
+    color: white;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+/* header section */
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container{
+    background-color: #1F1F1F;
+    max-width: 300px; 
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: solid 2px white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.downloadCV{
+    padding: 12px 24px;
+    background-color: #2A2A2A;
+    border-radius: 5px;
+    max-width: 200px;
+    aspect-ratio: 1/0;
+    text-decoration: none;
+    font-weight: bolder;
+    border: solid .5px white;
+    
+}
+
+.arrow-down{
+    font-size: 40px;  
+    text-align: center;
+    margin: 20px;    
+}
+
+
+/* education section */
+.education-section{
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.school-container{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 2rem;
+}
+
+.school-container > div{
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+}
+
+
+.school-img-cont{
+    width: 100%;
+    max-width: 150px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid gray;
+
+}
+
+.school-img-cont img{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    object-fit: contain;
+}
+
+/* skills section */
+
+.skills-section{
+    text-align: center;
+    min-height: 70vh;
+}
+
+.skills-container{
+    display: flex;
+    width: 100%;
+    max-width: 80%;
+    height: 40vh;
+    margin: 5% auto;
+}
+
+.header-side{
+    width: 100%;
+    max-width: 20%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.header-side h1{
+    writing-mode: vertical-lr; 
+    text-orientation: upright; 
+    margin: 0;
+    padding: 10px; 
+    letter-spacing: 5px; 
+    font-size: 24px;
+}
+
+.skill-details{
+    width: 100%;
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+.skill-contents{
+    display: flex;
+    border-bottom: 0.5px solid gray;
+    margin-left: 2%;
+    min-width:70%;
+    overflow: auto hidden;
+    min-height: 80px;
+}
+
+.skill-details h1{
+    display: flex;
+    justify-content: left;
+    font-size: larger;
+    margin-left: 2%;
+}
+
+.skill-label {
+    display: none;
+    position: absolute;
+    bottom: -20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px; 
+}
+
+.skill-item {
+    position: relative;
+    margin: 10px; 
+    transition: transform 0.3s; 
+}
+
+.skill-item img {
+    max-width: 60px; 
+    aspect-ratio: 1/1;
+    transition: transform 0.3s; 
+}
+
+.skill-item:hover img {
+    transform: scale(1.2); 
+}
+
+.skill-item:hover .skill-label {
+    display: block; 
+}
+
+/* experience */
+
+.experiences{
+    margin: 5% auto;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-container{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 2rem;
+}
+
+.work-container > div{
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+}
+
+.work-container > div:nth-child(2){
+    min-width: 400px;
+    gap: 1rem;
+}
+
+.work-img-cont{
+    width: 100%;
+    max-width: 150px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid gray;
+
+}
+
+.work-img-cont img{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    object-fit: contain;
+}
+
+.reach{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+
+}
+
+.email{
+   margin-bottom: 3%;
+}
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background: transparent; 
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%; 
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out; 
+    font-size: 18px;
+    outline: none;
+}
+
+
+
+.plug-side{
+    width: 100%;
+    max-width: 2%;
+    position: fixed;
+    bottom: 0%;
+    margin-left: 2%;
+    height: 20%;
+    background-color: transparent;
+
+}
+
+.icon-container{
+    width: 100%;
+    height: auto;
+}
+
+.icon-container img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.line{
+    margin: auto;
+    width: 0.5%;
+    background-color: white;
+    height: 100%; 
+    max-height: 70%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(48, 47, 47);
+    width: 100%;
+}
+
+
+
+
+/* Media query for mobile phones */
+@media (max-width: 480px), (max-height: 600px) {
+
+    .work-container > div:nth-child(2){
+        min-width: 320px;
+        gap: 1rem;
+    }
+
+    .education-section{
+        margin-bottom: 20%;
+    }
+
+    .school-container{
+        border-bottom: 0.5px solid gray;
+    }
+
+    .work-container{
+        border-bottom: 0.5px solid gray;
+    }
+
+    .experiences{
+        margin-bottom: 10%;
+    }
+
+    .plug-side{
+        display: none;
+    }
+
+    .skills-section{
+        min-height: 60vh;
+        margin-bottom: 30%;
+    }
+
+    .email{
+        margin-bottom: 10%;
+    }
+
+}
+
